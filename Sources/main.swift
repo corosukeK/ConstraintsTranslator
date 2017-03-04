@@ -28,5 +28,7 @@ registry.main(defaultVerb: helpCommand.verb) { (error) in
         print("FileNotFound")
     case .fileIsNotReadable:
         print("fileIsNotReadable")
+    case .parseError:
+        print("parseError")
     }
 }
