@@ -87,6 +87,17 @@ class JsonFormatter: Formatter {
     }
 }
 
+extension Constraint: Equatable {
+    public static func ==(lhs: Constraint, rhs: Constraint) -> Bool {
+        return lhs.firstItem == rhs.firstItem &&
+            lhs.firstAttribute == rhs.firstAttribute &&
+            lhs.secondItem == rhs.secondItem &&
+            lhs.secondAttribute == rhs.secondAttribute &&
+            lhs.constant == rhs.constant &&
+            lhs.id == rhs.id
+    }
+}
+
 struct View {
     let id: String
     let subviews: [View]
@@ -120,5 +131,23 @@ struct View {
         self.id = id
         self.subviews = subviews
         self.constraints = constraints
+    }
+}
+
+func arrayEqual<T: Equatable>(lhs: [T], rhs: [T]) -> Bool {
+    for t in zip(lhs, rhs) {
+        let b = (t.0 != t.1)
+        if b {
+            return false
+        }
+    }
+    return true
+}
+
+extension View: Equatable {
+    public static func ==(lhs: View, rhs: View) -> Bool {
+        return lhs.id == rhs.id &&
+            arrayEqual(lhs: lhs.subviews, rhs: lhs.subviews) &&
+            arrayEqual(lhs: lhs.constraints, rhs: lhs.constraints)
     }
 }

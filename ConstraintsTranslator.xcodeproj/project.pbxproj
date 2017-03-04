@@ -20,6 +20,12 @@
 		BE5A50B51E6A88720019468C /* HorizontalLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A50B31E6A88720019468C /* HorizontalLayoutTests.swift */; };
 		BE5A50E41E6A98460019468C /* AEXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* AEXML.framework */; };
 		BE5A50E51E6A98460019468C /* Commandant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* Commandant.framework */; };
+		BE5A50E61E6A99DA0019468C /* ConstraintsTranslatorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* ConstraintsTranslatorError.swift */; };
+		BE5A50E71E6A99DA0019468C /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9503FB1E6A8E1C00AEC107 /* Parser.swift */; };
+		BE5A50E81E6A99DA0019468C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* main.swift */; };
+		BE5A50E91E6A99DA0019468C /* GenerateCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9503F61E6A6DBD00AEC107 /* GenerateCommand.swift */; };
+		BE5A50EA1E6A99DA0019468C /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* Translator.swift */; };
+		BE5A50EB1E6A99DA0019468C /* VersionCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* VersionCommand.swift */; };
 		OBJ_45 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Result.swift */; };
 		OBJ_46 /* ResultProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* ResultProtocol.swift */; };
 		OBJ_53 /* Argument.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Argument.swift */; };
@@ -436,6 +442,12 @@
 			files = (
 				BE5A50AD1E6A72650019468C /* VisualFormatLanguageTranslator.swift in Sources */,
 				BE5A50A11E6A720D0019468C /* CenterViewTests.swift in Sources */,
+				BE5A50E91E6A99DA0019468C /* GenerateCommand.swift in Sources */,
+				BE5A50EB1E6A99DA0019468C /* VersionCommand.swift in Sources */,
+				BE5A50E81E6A99DA0019468C /* main.swift in Sources */,
+				BE5A50E71E6A99DA0019468C /* Parser.swift in Sources */,
+				BE5A50EA1E6A99DA0019468C /* Translator.swift in Sources */,
+				BE5A50E61E6A99DA0019468C /* ConstraintsTranslatorError.swift in Sources */,
 				BE5A50B51E6A88720019468C /* HorizontalLayoutTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

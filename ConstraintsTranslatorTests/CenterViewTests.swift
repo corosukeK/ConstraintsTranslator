@@ -50,6 +50,16 @@ class CenterViewTests: XCTestCase {
         super.tearDown()
     }
     
+    func testXmlToTemporaryClass() {
+        let testBundle = Bundle.allBundles.filter{ $0.bundleURL.absoluteString.hasSuffix("xctest/") }.first!
+        let pathStirng = testBundle.path(forResource: "CenterView", ofType: "xml")
+        let url = URL(fileURLWithPath: pathStirng!)
+        let content = try! String(contentsOf: url, encoding: .utf8)
+        
+        let view = try! StoryboardParser.parse(string: content)
+        XCTAssertEqual(view!, self.view)
+    }
+    
     func testTemporaryClassToJsonFormat() {
         let testBundle = Bundle.allBundles.filter{ $0.bundleURL.absoluteString.hasSuffix("xctest/") }.first!
         let pathStirng = testBundle.path(forResource: "CenterView", ofType: "json")
