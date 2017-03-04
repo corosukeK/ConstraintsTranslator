@@ -9,5 +9,6 @@
 import Foundation
 
 public enum ConstraintsTranslatorError: Error {
-    
+    case fileNotFound
+    case fileIsNotReadable
 }
