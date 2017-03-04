@@ -13,3 +13,17 @@ class VisualFormatLanguageTranslator {
         return ""
     }
 }
+
+struct Constraint {
+    let firstItem: String
+    let firstAttribute: String
+    let secondItem: String
+    let secondAttribute: String
+    let id:String
+}
+
+struct View {
+    let id: String
+    let subviews: [View]
+    let constrains: [Constraint]
+}
