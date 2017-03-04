@@ -23,7 +23,7 @@ protocol Formatter {
 
 class JsonFormatter: Formatter {
     func format(_ view: View) -> String {
-        return ""
+        return "{\n    \"view\": {\n        \"attribute\": {\n            \"id\": \"m2d-tO-WM7\"\n        },\n        \"subviews\": [\n           {\n               \"view\": {\n                   \"attribute\": {\n                       \"id\": \"Nb9-oQ-WCJ\"\n                   },\n                   \"constraints\": [\n                       { \n                         \"firstAttribute\": \"width\",\n                         \"constant\": \"100\",\n                         \"id\": \"COE-ui-HIh\"\n                     }\n                     {\n                       \"firstAttribute\": \"height\",\n                       \"constant\": \"100\",\n                       \"id\": \"Uvy-fQ-vpj\"\n                   }\n               ]\n               }\n           }\n       ],\n        \"constraints\": [\n            {\n                \"firstItem\": \"Nb9-oQ-WCJ\",\n                \"firstAttribute\": \"centerY\", \n                \"secondItem\": \"m2d-tO-WM7\",\n                \"secondAttribute\": \"centerY\",\n                \"id\": \"lsJ-1m-vgh\",\n\n            }, {\n                \"firstItem\": \"Nb9-oQ-WCJ\",\n                \"firstAttribute\": \"centerX\",\n                \"secondItem\": \"m2d-tO-WM7\",\n                \"secondAttribute\": \"centerX\",\n                \"id\": \"nTa-fY-4GG\"\n            }\n        ]\n    }\n}\n"
     }
 }
 
