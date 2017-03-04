@@ -42,6 +42,24 @@ struct Constraint {
         self.constant = attributes["constant"]
         self.id = attributes["id"]!
     }
+    
+    func readableDescription(target: View) -> String {
+        let name = target.userLabel ?? target.id
+        if let constant = constant, firstAttribute == "width" && secondAttribute == nil {
+            return "\(name).width == \(constant)"
+        }
+        else if let constant = constant, firstAttribute == "height" && secondAttribute == nil {
+            return "\(name).height == \(constant)"
+        }
+        else if  let firstItem = firstItem,
+            let secondItem = secondItem,
+            let secondAttribute = secondAttribute
+        {
+            return "\(firstItem).\(firstAttribute) == \(secondItem).\(secondAttribute)"
+        }
+        
+        fatalError()
+    }
 }
 
 extension Constraint: Equatable {

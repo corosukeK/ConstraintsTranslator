@@ -40,9 +40,14 @@ public struct GenerateCommand: CommandProtocol {
 
         let string = try! String(contentsOfFile: options.filePath)
         
-        guard let _ = try? StoryboardParser.parse(string: string) else {
+        guard let view = try? StoryboardParser.parse(string: string) else {
             return .failure(.parseError)
         }
+        guard let unwrappedview = view else {
+            fatalError()
+        }
+
+        print(DSLFormatter().format(unwrappedview))
         
         return .success()
     }
