@@ -126,10 +126,12 @@ struct View {
     let id: String
     let subviews: [View]
     let constraints: [Constraint]
+    let userLabel: String?
     
     init(element: AEXMLElement) {
         
         self.id = element.attributes["id"]!
+        self.userLabel = element.attributes["userLabel"]
 
         let subviewsElement = element["subviews"]["view"]
         if subviewsElement.error == nil {
