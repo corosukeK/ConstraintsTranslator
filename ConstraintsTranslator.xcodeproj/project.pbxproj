@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2B9503F81E6A6DFC00AEC107 /* GenerateCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9503F61E6A6DBD00AEC107 /* GenerateCommand.swift */; };
 		2B9503FC1E6A8E1C00AEC107 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9503FB1E6A8E1C00AEC107 /* Parser.swift */; };
+		2B95040B1E6A9C3800AEC107 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B95040A1E6A9C3800AEC107 /* Constraint.swift */; };
 		BE5A50A11E6A720D0019468C /* CenterViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A50A01E6A720D0019468C /* CenterViewTests.swift */; };
 		BE5A50A31E6A720D0019468C /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* Result.framework */; };
 		BE5A50AB1E6A72470019468C /* CenterView.json in Resources */ = {isa = PBXBuildFile; fileRef = BE5A50A91E6A72470019468C /* CenterView.json */; };
@@ -87,6 +88,7 @@
 /* Begin PBXFileReference section */
 		2B9503F61E6A6DBD00AEC107 /* GenerateCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateCommand.swift; sourceTree = "<group>"; };
 		2B9503FB1E6A8E1C00AEC107 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		2B95040A1E6A9C3800AEC107 /* Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
 		BE5A509E1E6A720D0019468C /* ConstraintsTranslatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConstraintsTranslatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5A50A01E6A720D0019468C /* CenterViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterViewTests.swift; sourceTree = "<group>"; };
 		BE5A50A21E6A720D0019468C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 				OBJ_30 /* Translator.swift */,
 				OBJ_31 /* VersionCommand.swift */,
 				OBJ_32 /* VisualFormatLanguageTranslator.swift */,
+				2B95040A1E6A9C3800AEC107 /* Constraint.swift */,
 			);
 			name = ConstraintsTranslator;
 			path = Sources;
@@ -478,6 +481,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				2B95040B1E6A9C3800AEC107 /* Constraint.swift in Sources */,
 				2B9503F81E6A6DFC00AEC107 /* GenerateCommand.swift in Sources */,
 				OBJ_81 /* ConstraintsTranslatorError.swift in Sources */,
 				OBJ_82 /* main.swift in Sources */,
