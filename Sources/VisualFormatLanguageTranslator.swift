@@ -51,7 +51,7 @@ class DSLFormatter: Formatter {
         
         let constraints = view.constraints.map{ contraint(constraint: $0, indent: indent + 2, targetView: view) }.joined(separator: spacing(indent + 1) + "\n")
         return spacing(indent) + "\"constraints\": [\n" +
-            constraints +
+            constraints + "\n" +
             spacing(indent) + "]\n"
     }
     func contraint(constraint: Constraint, indent: Int, targetView: View) -> String {
