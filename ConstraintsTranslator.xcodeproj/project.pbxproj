@@ -26,6 +26,7 @@
 		BE5A50E91E6A99DA0019468C /* GenerateCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9503F61E6A6DBD00AEC107 /* GenerateCommand.swift */; };
 		BE5A50EA1E6A99DA0019468C /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* Translator.swift */; };
 		BE5A50EB1E6A99DA0019468C /* VersionCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* VersionCommand.swift */; };
+		BE5A50EC1E6A9D1B0019468C /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B95040A1E6A9C3800AEC107 /* Constraint.swift */; };
 		OBJ_45 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Result.swift */; };
 		OBJ_46 /* ResultProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* ResultProtocol.swift */; };
 		OBJ_53 /* Argument.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Argument.swift */; };
@@ -448,6 +449,7 @@
 				BE5A50E71E6A99DA0019468C /* Parser.swift in Sources */,
 				BE5A50EA1E6A99DA0019468C /* Translator.swift in Sources */,
 				BE5A50E61E6A99DA0019468C /* ConstraintsTranslatorError.swift in Sources */,
+				BE5A50EC1E6A9D1B0019468C /* Constraint.swift in Sources */,
 				BE5A50B51E6A88720019468C /* HorizontalLayoutTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

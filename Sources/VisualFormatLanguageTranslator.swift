@@ -127,10 +127,11 @@ struct View {
             self.constraints = []
         }
     }
-    init(id: String, subviews: [View], constraints: [Constraint]) {
+    init(id: String, subviews: [View], constraints: [Constraint], userLabel: String? = nil) {
         self.id = id
         self.subviews = subviews
         self.constraints = constraints
+        self.userLabel = userLabel
     }
 }
 
