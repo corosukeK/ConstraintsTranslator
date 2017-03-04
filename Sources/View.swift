@@ -20,13 +20,9 @@ struct View {
         self.id = element.attributes["id"]!
         self.userLabel = element.attributes["userLabel"]
         
-        let subviewsElement = element["subviews"]["view"]
-        if subviewsElement.error == nil {
-            self.subviews = subviewsElement.all!.map({ (element) -> View in
-                return View(element: element)
-            })
-        } else {
-            self.subviews = []
+        let subviewsElement = element["subviews"].children
+        self.subviews = subviewsElement.map{ (element) -> View in
+            return View(element: element)
         }
         
         let constraintsElement = element["constraints"]["constraint"]

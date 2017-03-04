@@ -16,210 +16,32 @@ class OtherViewTests: XCTestCase {
     override func setUp() {
         super.setUp()
         
-        self.view =
-            View(
-                id: "m2d-tO-WM7",
-                subviews: [
-                    View(
-                        id: "VNq-M2-OJw",
-                        subviews: [
-                            View(
-                                id: "5dM-9U-Bzm",
-                                subviews: [],
-                                constraints: []
-                            )
-                        ],
-                        constraints: [
-                            Constraint(
-                                firstItem: "5dM-9U-Bzm",
-                                firstAttribute: "leading",
-                                secondItem: "VNq-M2-OJw",
-                                secondAttribute: "leading",
-                                id: "4f1-tv-VRC"
-                            ),
-                            Constraint(
-                                firstAttribute: "bottom",
-                                secondItem: "5dM-9U-Bzm",
-                                secondAttribute: "bottom",
-                                id: "EzN-e7-KZC"
-                            ),
-                            Constraint(
-                                firstItem: "5dM-9U-Bzm",
-                                firstAttribute: "top",
-                                secondItem: "VNq-M2-OJw",
-                                secondAttribute: "top",
-                                id: "QNX-Xb-ufF"
-                            ),
-                            Constraint(
-                                firstAttribute: "trailing",
-                                secondItem: "5dM-9U-Bzm",
-                                secondAttribute: "trailing",
-                                id: "RdQ-Ff-T7T"
-                            )
-                        ]
-                    ),
-                    View(
-                        id: "ijL-f7-0up",
-                        subviews: [
-                            View(
-                                id: "9KZ-T6-It0",
-                                subviews: [],
-                                constraints: []
-                            )
-                        ],
-                        constraints: [
-                            Constraint(
-                                firstItem: "9KZ-T6-It0",
-                                firstAttribute: "top",
-                                secondItem: "ijL-f7-0up",
-                                secondAttribute: "top",
-                                id: "LPy-7b-Vmg"
-                            ),
-                            Constraint(
-                                firstItem: "9KZ-T6-It0",
-                                firstAttribute: "leading",
-                                secondItem: "ijL-f7-0up",
-                                secondAttribute: "leading",
-                                id: "ecO-Yt-PqP"
-                            ),
-                            Constraint(
-                                firstAttribute: "trailing",
-                                secondItem: "9KZ-T6-It0",
-                                secondAttribute: "trailing",
-                                id: "gpf-sJ-rXW"
-                            ),
-                            Constraint(
-                                firstAttribute: "bottom",
-                                secondItem: "9KZ-T6-It0",
-                                secondAttribute: "bottom",
-                                id: "hJ7-3g-mH5"
-                            )
-                        ]
-                    ),
-                    View(
-                        id: "ML0-JM-r8i",
-                        subviews: [
-                            View(
-                                id: "KoM-oH-bWL",
-                                subviews: [],
-                                constraints: []
-                            )],
-                        constraints: [
-                            Constraint(
-                                firstAttribute: "bottom",
-                                secondItem: "KoM-oH-bWL",
-                                secondAttribute: "bottom",
-                                id: "Dru-EJ-sVd"
-                            ),
-                            Constraint(
-                                firstItem: "KoM-oH-bWL",
-                                firstAttribute: "top",
-                                secondItem: "ML0-JM-r8i",
-                                secondAttribute: "top",
-                                id: "MNC-I3-rKo"
-                            ),
-                            Constraint(
-                                firstAttribute: "trailing",
-                                secondItem: "KoM-oH-bWL",
-                                secondAttribute: "trailing",
-                                id: "UBU-WN-Yjt"
-                            ),
-                            Constraint(
-                                firstItem: "KoM-oH-bWL",
-                                firstAttribute: "leading",
-                                secondItem: "ML0-JM-r8i",
-                                secondAttribute: "leading",
-                                id: "xfJ-ci-9LF"
-                            )
-                        ]
-                    ),
-                    ],
-                constraints: [
-                    Constraint(
-                        firstItem: "VNq-M2-OJw",
-                        firstAttribute: "top",
-                        secondItem: "05h-Om-RXB",
-                        secondAttribute: "bottom",
-                        id: "3FZ-cU-0vv"
-                    ),
-                    Constraint(
-                        firstItem: "VNq-M2-OJw",
-                        firstAttribute: "leading",
-                        secondItem: "m2d-tO-WM7",
-                        secondAttribute: "leadingMargin",
-                        id: "4GM-Ao-NfL"
-                    ),
-                    Constraint(
-                        firstItem: "ML0-JM-r8i",
-                        firstAttribute: "width",
-                        secondItem: "VNq-M2-OJw",
-                        secondAttribute: "width",
-                        id: "503-QC-onw"
-                    ),
-                    Constraint(
-                        firstItem: "ijL-f7-0up",
-                        firstAttribute: "leading",
-                        secondItem: "VNq-M2-OJw",
-                        secondAttribute: "trailing",
-                        id: "7d8-1X-1Wh"
-                    ),
-                    Constraint(
-                        firstItem: "ML0-JM-r8i",
-                        firstAttribute: "leading",
-                        secondItem: "ijL-f7-0up",
-                        secondAttribute: "trailing",
-                        id: "A6U-l4-gl7"
-                    ),
-                    Constraint(
-                        firstItem: "ML0-JM-r8i",
-                        firstAttribute: "top",
-                        secondItem: "05h-Om-RXB",
-                        secondAttribute: "bottom",
-                        id: "GVh-sW-pgs"
-                    ),
-                    Constraint(
-                        firstItem: "HRC-tA-4h8",
-                        firstAttribute: "top",
-                        secondItem: "ML0-JM-r8i",
-                        secondAttribute: "bottom",
-                        id: "O5k-f8-qjb"
-                    ),
-                    Constraint(
-                        firstItem: "ijL-f7-0up",
-                        firstAttribute: "top",
-                        secondItem: "05h-Om-RXB",
-                        secondAttribute: "bottom",
-                        id: "WSJ-hs-ehZ"
-                    ),
-                    Constraint(
-                        firstItem: "HRC-tA-4h8",
-                        firstAttribute: "top",
-                        secondItem: "ijL-f7-0up",
-                        secondAttribute: "bottom",
-                        id: "cDx-5Q-kBQ"
-                    ),
-                    Constraint(
-                        firstItem: "HRC-tA-4h8",
-                        firstAttribute: "top",
-                        secondItem: "VNq-M2-OJw",
-                        secondAttribute: "bottom",
-                        id: "dGx-4W-Kwa"
-                    ),
-                    Constraint(
-                        firstAttribute: "trailingMargin",
-                        secondItem: "ML0-JM-r8i",
-                        secondAttribute: "trailing",
-                        id: "fDS-rI-XGL"
-                    ),
-                    Constraint(
-                        firstItem: "ijL-f7-0up",
-                        firstAttribute: "width",
-                        secondItem: "VNq-M2-OJw",
-                        secondAttribute: "width",
-                        id: "wuD-ns-uYH"
-                    )
-                ]
-        )
+        self.view = View(id: "m2d-tO-WM7", subviews: [
+            View(id: "uPU-dX-gwR", subviews: [], constraints: [], userLabel: nil),
+            View(id: "urs-FR-alE", subviews: [], constraints: [], userLabel: nil),
+            View(id: "Ivd-u6-e9B", subviews: [], constraints: [], userLabel: nil),
+            View(id: "kzl-tD-zP5", subviews: [], constraints: [], userLabel: nil),
+            View(id: "WcE-b9-OsW", subviews: [], constraints: [], userLabel: nil),
+            View(id: "qJg-av-K5X", subviews: [], constraints: [
+                Constraint(firstItem: nil, firstAttribute: "width", secondItem: nil, secondAttribute: nil, constant: "114", id: "PbX-9x-zjx")
+                ], userLabel: nil),
+            View(id: "YZp-vA-FfM", subviews: [], constraints: [], userLabel: nil)],
+                         constraints: [
+                            Constraint(firstItem: "kzl-tD-zP5", firstAttribute: "leading", secondItem: "m2d-tO-WM7", secondAttribute: "leadingMargin", constant: nil, id: "1SL-HC-nfI"),
+                            Constraint(firstItem: "qJg-av-K5X", firstAttribute: "leading", secondItem: "m2d-tO-WM7", secondAttribute: "leadingMargin", constant: nil, id: "65D-kW-pIH"),
+                            Constraint(firstItem: "uPU-dX-gwR", firstAttribute: "top", secondItem: "YZp-vA-FfM", secondAttribute: "bottom", constant: nil, id: "GcQ-t0-FOO"),
+                            Constraint(firstItem: "qJg-av-K5X", firstAttribute: "top", secondItem: "WcE-b9-OsW", secondAttribute: "bottom", constant: nil, id: "IKQ-bJ-Vdq"),
+                            Constraint(firstItem: "YZp-vA-FfM", firstAttribute: "leading", secondItem: "m2d-tO-WM7", secondAttribute: "leadingMargin", constant: nil, id: "IUT-6f-9oF"),
+                            Constraint(firstItem: "kzl-tD-zP5", firstAttribute: "top", secondItem: "Ivd-u6-e9B", secondAttribute: "bottom", constant: nil, id: "Sp6-Df-1pc"),
+                            Constraint(firstItem: "Ivd-u6-e9B", firstAttribute: "leading", secondItem: "m2d-tO-WM7", secondAttribute: "leadingMargin", constant: nil, id: "TsQ-j4-EOv"),
+                            Constraint(firstItem: "WcE-b9-OsW", firstAttribute: "top", secondItem: "kzl-tD-zP5", secondAttribute: "bottom", constant: nil, id: "WiQ-gF-aK0"),
+                            Constraint(firstItem: "urs-FR-alE", firstAttribute: "top", secondItem: "05h-Om-RXB", secondAttribute: "bottom", constant: nil, id: "Zzo-8b-CT0"),
+                            Constraint(firstItem: "YZp-vA-FfM", firstAttribute: "top", secondItem: "qJg-av-K5X", secondAttribute: "bottom", constant: nil, id: "gJ6-od-Esa"),
+                            Constraint(firstItem: "urs-FR-alE", firstAttribute: "leading", secondItem: "m2d-tO-WM7", secondAttribute: "leadingMargin", constant: nil, id: "kFa-9n-3nG"),
+                            Constraint(firstItem: "uPU-dX-gwR", firstAttribute: "leading", secondItem: "m2d-tO-WM7", secondAttribute: "leadingMargin", constant: nil, id: "n1X-jE-BfV"),
+                            Constraint(firstItem: "Ivd-u6-e9B", firstAttribute: "top", secondItem: "urs-FR-alE", secondAttribute: "bottom", constant: nil, id: "q8o-Co-Npv"),
+                            Constraint(firstItem: "WcE-b9-OsW", firstAttribute: "leading", secondItem: "m2d-tO-WM7", secondAttribute: "leadingMargin", constant: nil, id: "rgT-NN-HF2")
+            ], userLabel: nil)
     }
     
     override func tearDown() {
