@@ -1,6 +1,6 @@
 ///
-//  ConstrainsTranslatorTests.swift
-//  ConstrainsTranslatorTests
+//  CenterViewTests.swift
+//  CenterViewTests
 //
 //  Created by akuraru on 2017/03/04.
 //  Copyright © 2017年 Keisuke Kimura. All rights reserved.
@@ -10,14 +10,14 @@ import Foundation
 import XCTest
 @testable import ConstraintsTranslator
 
-class ConstrainsTranslatorTests: XCTestCase {
+class CenterViewTests: XCTestCase {
     var view: View!
     
     override func setUp() {
         super.setUp()
         
         self.view = View(id: "m2d-tO-WM7", subviews: [
-            View(id: "Nb9-oQ-WCJ", subviews: [], constrains: [
+            View(id: "Nb9-oQ-WCJ", subviews: [], constraints: [
                 Constraint(
                     firstAttribute: "width",
                     constant: "100",
@@ -29,7 +29,7 @@ class ConstrainsTranslatorTests: XCTestCase {
                 )
                 
                 ])
-            ] , constrains:[
+            ] , constraints:[
                 Constraint(
                     firstItem: "Nb9-oQ-WCJ",
                     firstAttribute: "centerY",

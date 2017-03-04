@@ -46,7 +46,9 @@ class JsonFormatter: Formatter {
         return spacing(indent) + "\"attribute\": {\n" + spacing(indent + 1) + "\"id\": \"" + view.id + "\"\n" + spacing(indent) + "},\n"
     }
     func constraints(view: View, indent: Int) -> String {
-        let constraints = view.constrains.map{ contraint(constraint: $0, indent: indent + 2) }.joined(separator: spacing(indent + 1) + "}, {\n")
+        if view.constraints.isEmpty { return spacing(indent) + "\"constraints\": []\n" }
+        
+        let constraints = view.constraints.map{ contraint(constraint: $0, indent: indent + 2) }.joined(separator: spacing(indent + 1) + "}, {\n")
         return spacing(indent) + "\"constraints\": [\n" +
             spacing(indent + 1) + "{\n" +
             constraints +
@@ -112,5 +114,5 @@ struct Constraint {
 struct View {
     let id: String
     let subviews: [View]
-    let constrains: [Constraint]
+    let constraints: [Constraint]
 }

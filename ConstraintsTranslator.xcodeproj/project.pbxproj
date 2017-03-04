@@ -13,6 +13,9 @@
 		BE5A50AB1E6A72470019468C /* CenterView.json in Resources */ = {isa = PBXBuildFile; fileRef = BE5A50A91E6A72470019468C /* CenterView.json */; };
 		BE5A50AC1E6A72470019468C /* CenterView.xml in Resources */ = {isa = PBXBuildFile; fileRef = BE5A50AA1E6A72470019468C /* CenterView.xml */; };
 		BE5A50AD1E6A72650019468C /* VisualFormatLanguageTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* VisualFormatLanguageTranslator.swift */; };
+		BE5A50B11E6A88690019468C /* HorizontalLayout.json in Resources */ = {isa = PBXBuildFile; fileRef = BE5A50B01E6A88690019468C /* HorizontalLayout.json */; };
+		BE5A50B41E6A88720019468C /* HorizontalLayout.xml in Resources */ = {isa = PBXBuildFile; fileRef = BE5A50B21E6A88720019468C /* HorizontalLayout.xml */; };
+		BE5A50B51E6A88720019468C /* HorizontalLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A50B31E6A88720019468C /* HorizontalLayoutTests.swift */; };
 		OBJ_45 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Result.swift */; };
 		OBJ_46 /* ResultProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* ResultProtocol.swift */; };
 		OBJ_53 /* Argument.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Argument.swift */; };
@@ -85,6 +88,9 @@
 		BE5A50A21E6A720D0019468C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE5A50A91E6A72470019468C /* CenterView.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CenterView.json; sourceTree = "<group>"; };
 		BE5A50AA1E6A72470019468C /* CenterView.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = CenterView.xml; sourceTree = "<group>"; };
+		BE5A50B01E6A88690019468C /* HorizontalLayout.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HorizontalLayout.json; sourceTree = "<group>"; };
+		BE5A50B21E6A88720019468C /* HorizontalLayout.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = HorizontalLayout.xml; sourceTree = "<group>"; };
+		BE5A50B31E6A88720019468C /* HorizontalLayoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalLayoutTests.swift; sourceTree = "<group>"; };
 		OBJ_10 /* ResultProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultProtocol.swift; sourceTree = "<group>"; };
 		OBJ_12 /* Argument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Argument.swift; sourceTree = "<group>"; };
 		OBJ_13 /* ArgumentParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentParser.swift; sourceTree = "<group>"; };
@@ -160,6 +166,7 @@
 		BE5A509F1E6A720D0019468C /* ConstraintsTranslatorTests */ = {
 			isa = PBXGroup;
 			children = (
+				BE5A50AF1E6A88190019468C /* HorizontalLayout */,
 				BE5A50AE1E6A87D50019468C /* CenterView */,
 				BE5A50A21E6A720D0019468C /* Info.plist */,
 			);
@@ -174,6 +181,16 @@
 				BE5A50A01E6A720D0019468C /* CenterViewTests.swift */,
 			);
 			name = CenterView;
+			sourceTree = "<group>";
+		};
+		BE5A50AF1E6A88190019468C /* HorizontalLayout */ = {
+			isa = PBXGroup;
+			children = (
+				BE5A50B01E6A88690019468C /* HorizontalLayout.json */,
+				BE5A50B21E6A88720019468C /* HorizontalLayout.xml */,
+				BE5A50B31E6A88720019468C /* HorizontalLayoutTests.swift */,
+			);
+			name = HorizontalLayout;
 			sourceTree = "<group>";
 		};
 		OBJ_11 /* Commandant */ = {
@@ -395,6 +412,8 @@
 			files = (
 				BE5A50AB1E6A72470019468C /* CenterView.json in Resources */,
 				BE5A50AC1E6A72470019468C /* CenterView.xml in Resources */,
+				BE5A50B11E6A88690019468C /* HorizontalLayout.json in Resources */,
+				BE5A50B41E6A88720019468C /* HorizontalLayout.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +426,7 @@
 			files = (
 				BE5A50AD1E6A72650019468C /* VisualFormatLanguageTranslator.swift in Sources */,
 				BE5A50A11E6A720D0019468C /* CenterViewTests.swift in Sources */,
+				BE5A50B51E6A88720019468C /* HorizontalLayoutTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
