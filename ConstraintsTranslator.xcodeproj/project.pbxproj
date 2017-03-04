@@ -11,7 +11,6 @@
 		2B589DCC1E6A4971002D3A03 /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B589DCB1E6A4971002D3A03 /* Translator.swift */; };
 		2BA76DE71E6A4C5700E0592F /* VisualFormatLanguageTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA76DE61E6A4C5700E0592F /* VisualFormatLanguageTranslator.swift */; };
 		BE5A508E1E6A4D740019468C /* ConstrainsTranslatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A508D1E6A4D740019468C /* ConstrainsTranslatorTests.swift */; };
-		BE5A50941E6A4EEB0019468C /* CenterView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE5A50931E6A4EEB0019468C /* CenterView.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,7 +33,7 @@
 		BE5A508B1E6A4D740019468C /* ConstrainsTranslatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConstrainsTranslatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5A508D1E6A4D740019468C /* ConstrainsTranslatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstrainsTranslatorTests.swift; sourceTree = "<group>"; };
 		BE5A508F1E6A4D740019468C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BE5A50931E6A4EEB0019468C /* CenterView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CenterView.storyboard; sourceTree = "<group>"; };
+		BE5A50931E6A4EEB0019468C /* CenterView.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = CenterView.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +87,7 @@
 			children = (
 				BE5A508D1E6A4D740019468C /* ConstrainsTranslatorTests.swift */,
 				BE5A508F1E6A4D740019468C /* Info.plist */,
-				BE5A50931E6A4EEB0019468C /* CenterView.storyboard */,
+				BE5A50931E6A4EEB0019468C /* CenterView.xml */,
 			);
 			path = ConstrainsTranslatorTests;
 			sourceTree = "<group>";
@@ -142,7 +141,7 @@
 				TargetAttributes = {
 					2B589DC01E6A4094002D3A03 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 2TYVLETJ37;
+						DevelopmentTeam = T6FH9XPETC;
 						ProvisioningStyle = Automatic;
 					};
 					BE5A508A1E6A4D740019468C = {
@@ -174,7 +173,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE5A50941E6A4EEB0019468C /* CenterView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +292,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				DEVELOPMENT_TEAM = 2TYVLETJ37;
+				DEVELOPMENT_TEAM = T6FH9XPETC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -304,7 +302,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				DEVELOPMENT_TEAM = 2TYVLETJ37;
+				DEVELOPMENT_TEAM = T6FH9XPETC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -364,6 +362,7 @@
 				BE5A50911E6A4D740019468C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
