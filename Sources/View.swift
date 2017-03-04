@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import AEXML
 
 struct View {
     let id: String
