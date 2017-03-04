@@ -11,17 +11,12 @@ import XCTest
 @testable import ConstraintsTranslator
 
 class ConstrainsTranslatorTests: XCTestCase {
+    var view: View!
     
     override func setUp() {
         super.setUp()
-    }
-    
-    override func tearDown() {
-        super.tearDown()
-    }
-    
-    func testTemporaryClassToJsonFormat() {
-        let view = View(id: "m2d-tO-WM7", subviews: [
+        
+        self.view = View(id: "m2d-tO-WM7", subviews: [
             View(id: "Nb9-oQ-WCJ", subviews: [], constrains: [
                 Constraint(
                     firstAttribute: "width",
@@ -49,7 +44,13 @@ class ConstrainsTranslatorTests: XCTestCase {
                     id: "nTa-fY-4GG"
                 )
             ])
-        
+    }
+    
+    override func tearDown() {
+        super.tearDown()
+    }
+    
+    func testTemporaryClassToJsonFormat() {
         let testBundle = Bundle.allBundles.filter{ $0.bundleURL.absoluteString.hasSuffix("xctest/") }.first!
         let pathStirng = testBundle.path(forResource: "CenterView", ofType: "json")
         let url = URL(fileURLWithPath: pathStirng!)
