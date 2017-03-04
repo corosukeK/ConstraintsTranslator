@@ -160,12 +160,20 @@
 		BE5A509F1E6A720D0019468C /* ConstraintsTranslatorTests */ = {
 			isa = PBXGroup;
 			children = (
-				BE5A50A91E6A72470019468C /* CenterView.json */,
-				BE5A50AA1E6A72470019468C /* CenterView.xml */,
-				BE5A50A01E6A720D0019468C /* CenterViewTests.swift */,
+				BE5A50AE1E6A87D50019468C /* CenterView */,
 				BE5A50A21E6A720D0019468C /* Info.plist */,
 			);
 			path = ConstraintsTranslatorTests;
+			sourceTree = "<group>";
+		};
+		BE5A50AE1E6A87D50019468C /* CenterView */ = {
+			isa = PBXGroup;
+			children = (
+				BE5A50A91E6A72470019468C /* CenterView.json */,
+				BE5A50AA1E6A72470019468C /* CenterView.xml */,
+				BE5A50A01E6A720D0019468C /* CenterViewTests.swift */,
+			);
+			name = CenterView;
 			sourceTree = "<group>";
 		};
 		OBJ_11 /* Commandant */ = {
