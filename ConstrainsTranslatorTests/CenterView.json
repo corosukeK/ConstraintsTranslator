@@ -1,15 +1,12 @@
 {
     "view": {
         "attribute": {
-            "key": "view",
-            "contentMode": "scaleToFill",
             "id": "m2d-tO-WM7"
         },
         "subviews": [
            {
                "view": {
                    "attribute": {
-                       "contentMode": "scaleToFill",
                        "id": "Nb9-oQ-WCJ"
                    },
                    "constraints": [
