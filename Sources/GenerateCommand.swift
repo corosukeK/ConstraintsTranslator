@@ -40,7 +40,7 @@ public struct GenerateCommand: CommandProtocol {
 
         let string = try! String(contentsOfFile: options.filePath)
         
-        print(string)
+        _ = try! StoryboardParser.parse(string: string)
         
         return .success()
     }

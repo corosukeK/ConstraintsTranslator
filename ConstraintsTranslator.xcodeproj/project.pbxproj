@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2B9503F81E6A6DFC00AEC107 /* GenerateCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9503F61E6A6DBD00AEC107 /* GenerateCommand.swift */; };
+		2B9503FA1E6A816400AEC107 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9503F91E6A816400AEC107 /* Parser.swift */; };
 		BE5A50A11E6A720D0019468C /* ConstraintsTranslatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A50A01E6A720D0019468C /* ConstraintsTranslatorTests.swift */; };
 		BE5A50A31E6A720D0019468C /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* Result.framework */; };
 		BE5A50AB1E6A72470019468C /* CenterView.json in Resources */ = {isa = PBXBuildFile; fileRef = BE5A50A91E6A72470019468C /* CenterView.json */; };
@@ -80,6 +81,7 @@
 
 /* Begin PBXFileReference section */
 		2B9503F61E6A6DBD00AEC107 /* GenerateCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateCommand.swift; sourceTree = "<group>"; };
+		2B9503F91E6A816400AEC107 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		BE5A509E1E6A720D0019468C /* ConstraintsTranslatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConstraintsTranslatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5A50A01E6A720D0019468C /* ConstraintsTranslatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintsTranslatorTests.swift; sourceTree = "<group>"; };
 		BE5A50A21E6A720D0019468C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 				OBJ_29 /* main.swift */,
 				2B9503F61E6A6DBD00AEC107 /* GenerateCommand.swift */,
 				OBJ_30 /* Translator.swift */,
+				2B9503F91E6A816400AEC107 /* Parser.swift */,
 				OBJ_31 /* VersionCommand.swift */,
 				OBJ_32 /* VisualFormatLanguageTranslator.swift */,
 			);
@@ -449,6 +452,7 @@
 				OBJ_83 /* Translator.swift in Sources */,
 				OBJ_84 /* VersionCommand.swift in Sources */,
 				OBJ_85 /* VisualFormatLanguageTranslator.swift in Sources */,
+				2B9503FA1E6A816400AEC107 /* Parser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -785,6 +789,7 @@
 				BE5A50A71E6A720D0019468C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 		OBJ_2 /* Build configuration list for PBXProject "ConstraintsTranslator" */ = {
 			isa = XCConfigurationList;

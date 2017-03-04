@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import AEXML
 
 class VisualFormatLanguageTranslator {
     static func translate(storyboardString: String) -> String {
@@ -50,10 +51,47 @@ struct Constraint {
         self.constant = constant
         self.id = id
     }
+    
+    init(element: AEXMLElement) {
+        let attributes = element.attributes
+        print(attributes)
+        self.firstItem = attributes["firstItem"]
+        self.firstAttribute = attributes["firstAttribute"]!
+        self.secondItem = attributes["secondItem"]
+        self.secondAttribute = attributes["secondAttribute"]
+        self.constant = attributes["constant"]
+        self.id = attributes["id"]!
+    }
 }
 
 struct View {
     let id: String
     let subviews: [View]
-    let constrains: [Constraint]
+    let constraints: [Constraint]
+    
+    init(element: AEXMLElement) {
+        
+        self.id = element.attributes["id"]!
+
+        let subviewsElement = element["subviews"]["view"]
+        if subviewsElement.error == nil {
+            for view in subviewsElement.all! {
+                print(view.name)
+            }
+            self.subviews = subviewsElement.all!.map({ (element) -> View in
+                return View(element: element)
+            })
+        } else {
+            self.subviews = []
+        }
+
+        let constraintsElement = element["constraints"]["constraint"]
+        if subviewsElement.error == nil {
+            self.constraints = constraintsElement.all!.map({ (element) -> Constraint in
+                return Constraint(element: element)
+            })
+        } else {
+            self.constraints = []
+        }
+    }
 }
