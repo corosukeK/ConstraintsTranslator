@@ -8,7 +8,7 @@
 
 import Foundation
 import XCTest
-@testable import ConstraintsTranslator
+import ConstraintsTranslator
 
 class CenterViewTests: XCTestCase {
     var view: View!

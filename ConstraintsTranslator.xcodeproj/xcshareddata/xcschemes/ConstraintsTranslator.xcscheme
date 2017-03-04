@@ -70,7 +70,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BE5A509D1E6A720D0019468C"
+               BuildableName = "ConstraintsTranslatorTests.xctest"
+               BlueprintName = "ConstraintsTranslatorTests"
+               ReferencedContainer = "container:ConstraintsTranslator.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "OBJ_40"
+            BuildableName = "Result.framework"
+            BlueprintName = "Result"
+            ReferencedContainer = "container:ConstraintsTranslator.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -102,6 +121,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "OBJ_40"
+            BuildableName = "Result.framework"
+            BlueprintName = "Result"
+            ReferencedContainer = "container:ConstraintsTranslator.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

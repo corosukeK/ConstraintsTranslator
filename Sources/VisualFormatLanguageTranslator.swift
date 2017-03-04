@@ -149,4 +149,9 @@ struct View {
             self.constraints = []
         }
     }
+    init(id: String, subviews: [View], constraints: [Constraint]) {
+        self.id = id
+        self.subviews = subviews
+        self.constraints = constraints
+    }
 }

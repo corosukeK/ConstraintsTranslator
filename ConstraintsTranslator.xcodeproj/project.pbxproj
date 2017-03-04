@@ -17,6 +17,8 @@
 		BE5A50B11E6A88690019468C /* HorizontalLayout.json in Resources */ = {isa = PBXBuildFile; fileRef = BE5A50B01E6A88690019468C /* HorizontalLayout.json */; };
 		BE5A50B41E6A88720019468C /* HorizontalLayout.xml in Resources */ = {isa = PBXBuildFile; fileRef = BE5A50B21E6A88720019468C /* HorizontalLayout.xml */; };
 		BE5A50B51E6A88720019468C /* HorizontalLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A50B31E6A88720019468C /* HorizontalLayoutTests.swift */; };
+		BE5A50E41E6A98460019468C /* AEXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* AEXML.framework */; };
+		BE5A50E51E6A98460019468C /* Commandant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* Commandant.framework */; };
 		OBJ_45 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Result.swift */; };
 		OBJ_46 /* ResultProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* ResultProtocol.swift */; };
 		OBJ_53 /* Argument.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Argument.swift */; };
@@ -126,6 +128,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE5A50E41E6A98460019468C /* AEXML.framework in Frameworks */,
+				BE5A50E51E6A98460019468C /* Commandant.framework in Frameworks */,
 				BE5A50A31E6A720D0019468C /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
