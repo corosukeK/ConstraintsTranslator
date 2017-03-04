@@ -67,4 +67,12 @@ class CenterViewTests: XCTestCase {
         let content = try! String(contentsOf: url, encoding: .utf8)
         XCTAssertEqual(VisualFormatLanguageTranslator.format(view: view, formatter: JsonFormatter()), content)
     }
+    
+    func testTemporaryClassToDSLFormat() {
+        let testBundle = Bundle.allBundles.filter{ $0.bundleURL.absoluteString.hasSuffix("xctest/") }.first!
+        let pathStirng = testBundle.path(forResource: "CenterView", ofType: "dsl")
+        let url = URL(fileURLWithPath: pathStirng!)
+        let content = try! String(contentsOf: url, encoding: .utf8)
+        XCTAssertEqual(VisualFormatLanguageTranslator.format(view: view, formatter: DSLFormatter()), content)
+    }
 }

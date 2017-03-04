@@ -33,6 +33,7 @@
 		BE5A50F51E6A9F600019468C /* OtherViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A50F21E6A9F600019468C /* OtherViewTests.swift */; };
 		BE5A50F61E6A9F600019468C /* OtherView.xml in Resources */ = {isa = PBXBuildFile; fileRef = BE5A50F31E6A9F600019468C /* OtherView.xml */; };
 		BE5A50F81E6AB8100019468C /* HorizontalLayout.dsl in Resources */ = {isa = PBXBuildFile; fileRef = BE5A50F71E6AB8100019468C /* HorizontalLayout.dsl */; };
+		BE5A50FA1E6ABE0E0019468C /* CenterView.dsl in Resources */ = {isa = PBXBuildFile; fileRef = BE5A50F91E6ABE0E0019468C /* CenterView.dsl */; };
 		OBJ_45 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Result.swift */; };
 		OBJ_46 /* ResultProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* ResultProtocol.swift */; };
 		OBJ_53 /* Argument.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Argument.swift */; };
@@ -115,6 +116,7 @@
 		BE5A50F21E6A9F600019468C /* OtherViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherViewTests.swift; sourceTree = "<group>"; };
 		BE5A50F31E6A9F600019468C /* OtherView.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = OtherView.xml; sourceTree = "<group>"; };
 		BE5A50F71E6AB8100019468C /* HorizontalLayout.dsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HorizontalLayout.dsl; sourceTree = "<group>"; };
+		BE5A50F91E6ABE0E0019468C /* CenterView.dsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CenterView.dsl; sourceTree = "<group>"; };
 		OBJ_10 /* ResultProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultProtocol.swift; sourceTree = "<group>"; };
 		OBJ_12 /* Argument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Argument.swift; sourceTree = "<group>"; };
 		OBJ_13 /* ArgumentParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentParser.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 		BE5A50AE1E6A87D50019468C /* CenterView */ = {
 			isa = PBXGroup;
 			children = (
+				BE5A50F91E6ABE0E0019468C /* CenterView.dsl */,
 				BE5A50A91E6A72470019468C /* CenterView.json */,
 				BE5A50AA1E6A72470019468C /* CenterView.xml */,
 				BE5A50A01E6A720D0019468C /* CenterViewTests.swift */,
@@ -454,6 +457,7 @@
 				BE5A50F41E6A9F600019468C /* OtherView.json in Resources */,
 				BE5A50F81E6AB8100019468C /* HorizontalLayout.dsl in Resources */,
 				BE5A50AB1E6A72470019468C /* CenterView.json in Resources */,
+				BE5A50FA1E6ABE0E0019468C /* CenterView.dsl in Resources */,
 				BE5A50AC1E6A72470019468C /* CenterView.xml in Resources */,
 				BE5A50F61E6A9F600019468C /* OtherView.xml in Resources */,
 				BE5A50B11E6A88690019468C /* HorizontalLayout.json in Resources */,
