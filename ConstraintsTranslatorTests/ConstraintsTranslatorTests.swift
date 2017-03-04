@@ -50,7 +50,8 @@ class ConstrainsTranslatorTests: XCTestCase {
                 )
             ])
         
-        let pathStirng = Bundle.allBundles[0].path(forResource: "CenterView", ofType: "json")
+        let testBundle = Bundle.allBundles.filter{ $0.bundleURL.absoluteString.hasSuffix("xctest/") }.first!
+        let pathStirng = testBundle.path(forResource: "CenterView", ofType: "json")
         let url = URL(fileURLWithPath: pathStirng!)
         let content = try! String(contentsOf: url, encoding: .utf8)
         XCTAssertEqual(VisualFormatLanguageTranslator.format(view: view, formatter: JsonFormatter()), content)

@@ -23,7 +23,64 @@ protocol Formatter {
 
 class JsonFormatter: Formatter {
     func format(_ view: View) -> String {
-        return "{\n    \"view\": {\n        \"attribute\": {\n            \"id\": \"m2d-tO-WM7\"\n        },\n        \"subviews\": [\n           {\n               \"view\": {\n                   \"attribute\": {\n                       \"id\": \"Nb9-oQ-WCJ\"\n                   },\n                   \"constraints\": [\n                       { \n                         \"firstAttribute\": \"width\",\n                         \"constant\": \"100\",\n                         \"id\": \"COE-ui-HIh\"\n                     }\n                     {\n                       \"firstAttribute\": \"height\",\n                       \"constant\": \"100\",\n                       \"id\": \"Uvy-fQ-vpj\"\n                   }\n               ]\n               }\n           }\n       ],\n        \"constraints\": [\n            {\n                \"firstItem\": \"Nb9-oQ-WCJ\",\n                \"firstAttribute\": \"centerY\", \n                \"secondItem\": \"m2d-tO-WM7\",\n                \"secondAttribute\": \"centerY\",\n                \"id\": \"lsJ-1m-vgh\",\n\n            }, {\n                \"firstItem\": \"Nb9-oQ-WCJ\",\n                \"firstAttribute\": \"centerX\",\n                \"secondItem\": \"m2d-tO-WM7\",\n                \"secondAttribute\": \"centerX\",\n                \"id\": \"nTa-fY-4GG\"\n            }\n        ]\n    }\n}\n"
+        return "{\n" + formatView(view: view, indent: 1) + "}\n"
+    }
+    func formatView(view: View, indent: Int) -> String {
+        return spacing(indent) + "\"view\": {\n" +
+            formatAttribute(view: view, indent: indent + 1) +
+            subviews(view: view, indent: indent + 1) +
+            constraints(view: view, indent: indent + 1) +
+            spacing(indent) + "}\n"
+    }
+    func subviews(view: View, indent: Int) -> String {
+        if view.subviews.isEmpty { return spacing(indent) + "\"subviews\": [],\n" }
+        
+        let views = view.subviews.map{ formatView(view: $0, indent: indent + 2)}.joined(separator: spacing(indent + 1) + "}, {\n")
+        return spacing(indent) + "\"subviews\": [\n" +
+            spacing(indent + 1) + "{\n" +
+            views +
+            spacing(indent + 1) + "}\n" +
+            spacing(indent) + "],\n"
+    }
+    func formatAttribute(view: View, indent: Int) -> String {
+        return spacing(indent) + "\"attribute\": {\n" + spacing(indent + 1) + "\"id\": \"" + view.id + "\"\n" + spacing(indent) + "},\n"
+    }
+    func constraints(view: View, indent: Int) -> String {
+        let constraints = view.constrains.map{ contraint(constraint: $0, indent: indent + 2) }.joined(separator: spacing(indent + 1) + "}, {\n")
+        return spacing(indent) + "\"constraints\": [\n" +
+            spacing(indent + 1) + "{\n" +
+            constraints +
+            spacing(indent + 1) + "}\n" +
+            spacing(indent) + "]\n"
+    }
+    func contraint(constraint: Constraint, indent: Int) -> String {
+        var attribute: [String] = []
+        
+        if let firstItem = constraint.firstItem {
+            attribute.append(spacing(indent) + "\"firstItem\": \"" + firstItem)
+        }
+        
+        attribute.append(spacing(indent) + "\"firstAttribute\": \"" + constraint.firstAttribute)
+        
+        if let secondItem = constraint.secondItem {
+            attribute.append(spacing(indent) + "\"secondItem\": \"" + secondItem)
+        }
+        
+        if let secondAttribute = constraint.secondAttribute {
+            attribute.append(spacing(indent) + "\"secondAttribute\": \"" + secondAttribute)
+        }
+        
+        if let constant = constraint.constant {
+            attribute.append(spacing(indent) + "\"constant\": \"" + constant)
+        }
+        
+        attribute.append(spacing(indent) + "\"id\": \"" + constraint.id)
+        
+        return attribute.joined(separator: "\",\n") + "\"\n"
+    }
+
+    func spacing(_ count: Int) -> String {
+        return String(repeating: " ", count: 4 * count)
     }
 }
 
