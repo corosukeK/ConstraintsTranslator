@@ -125,7 +125,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B589DC81E6A4094002D3A03 /* Build configuration list for PBXNativeTarget "ConstraintsTranslator" */;
 			buildPhases = (
-				2BA76DF51E6A5FC700E0592F /* ShellScript */,
 				2B589DBD1E6A4094002D3A03 /* Sources */,
 				2B589DBE1E6A4094002D3A03 /* Frameworks */,
 				2B589DBF1E6A4094002D3A03 /* CopyFiles */,
@@ -204,25 +203,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		2BA76DF51E6A5FC700E0592F /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/Mac/Result.framework",
-				"$(SRCROOT)/Carthage/Build/Mac/Commandant.framework",
-				"$(SRCROOT)/Carthage/Build/Mac/Fuzi.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2B589DBD1E6A4094002D3A03 /* Sources */ = {
