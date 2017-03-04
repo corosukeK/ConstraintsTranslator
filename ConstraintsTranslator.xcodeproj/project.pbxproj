@@ -27,6 +27,8 @@
 		BE5A50EA1E6A99DA0019468C /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* Translator.swift */; };
 		BE5A50EB1E6A99DA0019468C /* VersionCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* VersionCommand.swift */; };
 		BE5A50EC1E6A9D1B0019468C /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B95040A1E6A9C3800AEC107 /* Constraint.swift */; };
+		BE5A50EE1E6A9DE10019468C /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A50ED1E6A9DE10019468C /* View.swift */; };
+		BE5A50EF1E6A9DEC0019468C /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A50ED1E6A9DE10019468C /* View.swift */; };
 		OBJ_45 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Result.swift */; };
 		OBJ_46 /* ResultProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* ResultProtocol.swift */; };
 		OBJ_53 /* Argument.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Argument.swift */; };
@@ -104,6 +106,7 @@
 		BE5A50B01E6A88690019468C /* HorizontalLayout.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HorizontalLayout.json; sourceTree = "<group>"; };
 		BE5A50B21E6A88720019468C /* HorizontalLayout.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = HorizontalLayout.xml; sourceTree = "<group>"; };
 		BE5A50B31E6A88720019468C /* HorizontalLayoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalLayoutTests.swift; sourceTree = "<group>"; };
+		BE5A50ED1E6A9DE10019468C /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		OBJ_10 /* ResultProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultProtocol.swift; sourceTree = "<group>"; };
 		OBJ_12 /* Argument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Argument.swift; sourceTree = "<group>"; };
 		OBJ_13 /* ArgumentParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentParser.swift; sourceTree = "<group>"; };
@@ -249,6 +252,7 @@
 				OBJ_31 /* VersionCommand.swift */,
 				OBJ_32 /* VisualFormatLanguageTranslator.swift */,
 				2B95040A1E6A9C3800AEC107 /* Constraint.swift */,
+				BE5A50ED1E6A9DE10019468C /* View.swift */,
 			);
 			name = ConstraintsTranslator;
 			path = Sources;
@@ -450,6 +454,7 @@
 				BE5A50EA1E6A99DA0019468C /* Translator.swift in Sources */,
 				BE5A50E61E6A99DA0019468C /* ConstraintsTranslatorError.swift in Sources */,
 				BE5A50EC1E6A9D1B0019468C /* Constraint.swift in Sources */,
+				BE5A50EF1E6A9DEC0019468C /* View.swift in Sources */,
 				BE5A50B51E6A88720019468C /* HorizontalLayoutTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,6 +505,7 @@
 				OBJ_81 /* ConstraintsTranslatorError.swift in Sources */,
 				OBJ_82 /* main.swift in Sources */,
 				OBJ_83 /* Translator.swift in Sources */,
+				BE5A50EE1E6A9DE10019468C /* View.swift in Sources */,
 				OBJ_84 /* VersionCommand.swift in Sources */,
 				OBJ_85 /* VisualFormatLanguageTranslator.swift in Sources */,
 				2B9503FC1E6A8E1C00AEC107 /* Parser.swift in Sources */,

@@ -43,3 +43,14 @@ struct Constraint {
         self.id = attributes["id"]!
     }
 }
+
+extension Constraint: Equatable {
+    public static func ==(lhs: Constraint, rhs: Constraint) -> Bool {
+        return lhs.firstItem == rhs.firstItem &&
+            lhs.firstAttribute == rhs.firstAttribute &&
+            lhs.secondItem == rhs.secondItem &&
+            lhs.secondAttribute == rhs.secondAttribute &&
+            lhs.constant == rhs.constant &&
+            lhs.id == rhs.id
+    }
+}
