@@ -12,6 +12,19 @@ class VisualFormatLanguageTranslator {
     static func translate(storyboardString: String) -> String {
         return ""
     }
+    static func format(view: View, formatter: Formatter) -> String {
+        return formatter.format(view)
+    }
+}
+
+protocol Formatter {
+    func format(_ view: View) -> String
+}
+
+class JsonFormatter: Formatter {
+    func format(_ view: View) -> String {
+        return ""
+    }
 }
 
 struct Constraint {

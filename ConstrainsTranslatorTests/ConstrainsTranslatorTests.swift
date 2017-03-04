@@ -1,4 +1,4 @@
-//
+///
 //  ConstrainsTranslatorTests.swift
 //  ConstrainsTranslatorTests
 //
@@ -6,6 +6,7 @@
 //  Copyright © 2017年 Keisuke Kimura. All rights reserved.
 //
 
+import Foundation
 import XCTest
 @testable import ConstraintsTranslator
 
@@ -48,5 +49,10 @@ class ConstrainsTranslatorTests: XCTestCase {
                     id: "nTa-fY-4GG"
                 )
             ])
+        
+        let pathStirng = Bundle.allBundles[0].path(forResource: "CenterView", ofType: "json")
+        let url = URL(fileURLWithPath: pathStirng!)
+        let content = try! String(contentsOf: url, encoding: .utf8)
+        XCTAssertEqual(VisualFormatLanguageTranslator.format(view: view, formatter: JsonFormatter()), content)
     }
 }
