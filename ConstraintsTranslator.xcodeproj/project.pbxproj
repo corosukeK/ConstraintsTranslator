@@ -13,6 +13,9 @@
 		2BA76DEA1E6A5AEB00E0592F /* Commandant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA76DE91E6A5AEB00E0592F /* Commandant.framework */; };
 		2BA76DEC1E6A5AF600E0592F /* Fuzi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA76DEB1E6A5AF600E0592F /* Fuzi.framework */; };
 		2BA76DEE1E6A5B0100E0592F /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA76DED1E6A5B0100E0592F /* Result.framework */; };
+		2BA76DF01E6A5CAB00E0592F /* ConstraintsTranslatorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA76DEF1E6A5CAB00E0592F /* ConstraintsTranslatorError.swift */; };
+		2BA76DF21E6A5D0C00E0592F /* VersionCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA76DF11E6A5D0C00E0592F /* VersionCommand.swift */; };
+		2BA76DF41E6A5D1900E0592F /* HelpCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA76DF31E6A5D1900E0592F /* HelpCommand.swift */; };
 		BE5A508E1E6A4D740019468C /* ConstrainsTranslatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A508D1E6A4D740019468C /* ConstrainsTranslatorTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +39,9 @@
 		2BA76DE91E6A5AEB00E0592F /* Commandant.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Commandant.framework; path = Carthage/Build/Mac/Commandant.framework; sourceTree = "<group>"; };
 		2BA76DEB1E6A5AF600E0592F /* Fuzi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fuzi.framework; path = Carthage/Build/Mac/Fuzi.framework; sourceTree = "<group>"; };
 		2BA76DED1E6A5B0100E0592F /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
+		2BA76DEF1E6A5CAB00E0592F /* ConstraintsTranslatorError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintsTranslatorError.swift; sourceTree = "<group>"; };
+		2BA76DF11E6A5D0C00E0592F /* VersionCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionCommand.swift; sourceTree = "<group>"; };
+		2BA76DF31E6A5D1900E0592F /* HelpCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpCommand.swift; sourceTree = "<group>"; };
 		BE5A508B1E6A4D740019468C /* ConstrainsTranslatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConstrainsTranslatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5A508D1E6A4D740019468C /* ConstrainsTranslatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstrainsTranslatorTests.swift; sourceTree = "<group>"; };
 		BE5A508F1E6A4D740019468C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,6 +92,9 @@
 			isa = PBXGroup;
 			children = (
 				2B589DC41E6A4094002D3A03 /* main.swift */,
+				2BA76DEF1E6A5CAB00E0592F /* ConstraintsTranslatorError.swift */,
+				2BA76DF11E6A5D0C00E0592F /* VersionCommand.swift */,
+				2BA76DF31E6A5D1900E0592F /* HelpCommand.swift */,
 				2B589DCB1E6A4971002D3A03 /* Translator.swift */,
 				2BA76DE61E6A4C5700E0592F /* VisualFormatLanguageTranslator.swift */,
 			);
@@ -203,8 +212,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BA76DF41E6A5D1900E0592F /* HelpCommand.swift in Sources */,
+				2BA76DF21E6A5D0C00E0592F /* VersionCommand.swift in Sources */,
 				2B589DC51E6A4094002D3A03 /* main.swift in Sources */,
 				2BA76DE71E6A4C5700E0592F /* VisualFormatLanguageTranslator.swift in Sources */,
+				2BA76DF01E6A5CAB00E0592F /* ConstraintsTranslatorError.swift in Sources */,
 				2B589DCC1E6A4971002D3A03 /* Translator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,6 +7,16 @@
 //
 
 import Foundation
+import Commandant
 
-print("Hello, World!")
 
+
+var arguments = CommandLine.arguments
+
+let registry = CommandRegistry<ConstraintsTranslatorError>()
+
+
+
+registry.main(defaultVerb: "help") { (error) in
+    
+}
