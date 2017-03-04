@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		2B9503F81E6A6DFC00AEC107 /* GenerateCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9503F61E6A6DBD00AEC107 /* GenerateCommand.swift */; };
+		BE5A50A11E6A720D0019468C /* ConstraintsTranslatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A50A01E6A720D0019468C /* ConstraintsTranslatorTests.swift */; };
+		BE5A50A31E6A720D0019468C /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* Result.framework */; };
+		BE5A50AB1E6A72470019468C /* CenterView.json in Resources */ = {isa = PBXBuildFile; fileRef = BE5A50A91E6A72470019468C /* CenterView.json */; };
+		BE5A50AC1E6A72470019468C /* CenterView.xml in Resources */ = {isa = PBXBuildFile; fileRef = BE5A50AA1E6A72470019468C /* CenterView.xml */; };
+		BE5A50AD1E6A72650019468C /* VisualFormatLanguageTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* VisualFormatLanguageTranslator.swift */; };
 		OBJ_45 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Result.swift */; };
 		OBJ_46 /* ResultProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* ResultProtocol.swift */; };
 		OBJ_53 /* Argument.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Argument.swift */; };
@@ -64,10 +69,22 @@
 			remoteGlobalIDString = OBJ_65;
 			remoteInfo = AEXML;
 		};
+		BE5A50A41E6A720D0019468C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_40;
+			remoteInfo = Result;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2B9503F61E6A6DBD00AEC107 /* GenerateCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateCommand.swift; sourceTree = "<group>"; };
+		BE5A509E1E6A720D0019468C /* ConstraintsTranslatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConstraintsTranslatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE5A50A01E6A720D0019468C /* ConstraintsTranslatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintsTranslatorTests.swift; sourceTree = "<group>"; };
+		BE5A50A21E6A720D0019468C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE5A50A91E6A72470019468C /* CenterView.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CenterView.json; sourceTree = "<group>"; };
+		BE5A50AA1E6A72470019468C /* CenterView.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = CenterView.xml; sourceTree = "<group>"; };
 		OBJ_10 /* ResultProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultProtocol.swift; sourceTree = "<group>"; };
 		OBJ_12 /* Argument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Argument.swift; sourceTree = "<group>"; };
 		OBJ_13 /* ArgumentParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentParser.swift; sourceTree = "<group>"; };
@@ -88,7 +105,6 @@
 		OBJ_30 /* Translator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translator.swift; sourceTree = "<group>"; };
 		OBJ_31 /* VersionCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionCommand.swift; sourceTree = "<group>"; };
 		OBJ_32 /* VisualFormatLanguageTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualFormatLanguageTranslator.swift; sourceTree = "<group>"; };
-		OBJ_34 /* ConstrainsTranslatorTests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ConstrainsTranslatorTests; sourceTree = SOURCE_ROOT; };
 		OBJ_36 /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_37 /* Commandant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Commandant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_38 /* AEXML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AEXML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +114,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BE5A509B1E6A720D0019468C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE5A50A31E6A720D0019468C /* Result.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		OBJ_47 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
@@ -133,6 +157,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE5A509F1E6A720D0019468C /* ConstraintsTranslatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE5A50A91E6A72470019468C /* CenterView.json */,
+				BE5A50AA1E6A72470019468C /* CenterView.xml */,
+				BE5A50A01E6A720D0019468C /* ConstraintsTranslatorTests.swift */,
+				BE5A50A21E6A720D0019468C /* Info.plist */,
+			);
+			path = ConstraintsTranslatorTests;
+			sourceTree = "<group>";
+		};
 		OBJ_11 /* Commandant */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,13 +212,6 @@
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_33 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
 		OBJ_35 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +219,7 @@
 				OBJ_37 /* Commandant.framework */,
 				OBJ_38 /* AEXML.framework */,
 				OBJ_39 /* ConstraintsTranslator */,
+				BE5A509E1E6A720D0019468C /* ConstraintsTranslatorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -200,8 +229,7 @@
 			children = (
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
-				OBJ_33 /* Tests */,
-				OBJ_34 /* ConstrainsTranslatorTests */,
+				BE5A509F1E6A720D0019468C /* ConstraintsTranslatorTests */,
 				OBJ_35 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -230,6 +258,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		BE5A509D1E6A720D0019468C /* ConstraintsTranslatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE5A50A81E6A720D0019468C /* Build configuration list for PBXNativeTarget "ConstraintsTranslatorTests" */;
+			buildPhases = (
+				BE5A509A1E6A720D0019468C /* Sources */,
+				BE5A509B1E6A720D0019468C /* Frameworks */,
+				BE5A509C1E6A720D0019468C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE5A50A51E6A720D0019468C /* PBXTargetDependency */,
+			);
+			name = ConstraintsTranslatorTests;
+			productName = ConstraintsTranslatorTests;
+			productReference = BE5A509E1E6A720D0019468C /* ConstraintsTranslatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		OBJ_40 /* Result */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_41 /* Build configuration list for PBXNativeTarget "Result" */;
@@ -304,7 +350,14 @@
 		OBJ_1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					BE5A509D1E6A720D0019468C = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "ConstraintsTranslator" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -322,11 +375,33 @@
 				OBJ_40 /* Result */,
 				OBJ_48 /* Commandant */,
 				OBJ_65 /* AEXML */,
+				BE5A509D1E6A720D0019468C /* ConstraintsTranslatorTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		BE5A509C1E6A720D0019468C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE5A50AB1E6A72470019468C /* CenterView.json in Resources */,
+				BE5A50AC1E6A72470019468C /* CenterView.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		BE5A509A1E6A720D0019468C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE5A50AD1E6A72650019468C /* VisualFormatLanguageTranslator.swift in Sources */,
+				BE5A50A11E6A720D0019468C /* ConstraintsTranslatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		OBJ_44 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
@@ -380,6 +455,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BE5A50A51E6A720D0019468C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_40 /* Result */;
+			targetProxy = BE5A50A41E6A720D0019468C /* PBXContainerItemProxy */;
+		};
 		OBJ_64 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_40 /* Result */;
@@ -403,6 +483,100 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		BE5A50A61E6A720D0019468C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = ConstraintsTranslatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = A.ConstraintsTranslatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BE5A50A71E6A720D0019468C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = ConstraintsTranslatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = A.ConstraintsTranslatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		OBJ_3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -604,6 +778,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BE5A50A81E6A720D0019468C /* Build configuration list for PBXNativeTarget "ConstraintsTranslatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE5A50A61E6A720D0019468C /* Debug */,
+				BE5A50A71E6A720D0019468C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		OBJ_2 /* Build configuration list for PBXProject "ConstraintsTranslator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
