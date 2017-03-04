@@ -16,7 +16,7 @@ public struct VersionCommand: CommandProtocol {
     public let function = "Display the current version of ConstraintsTranslator"
     
     public func run(_ options: NoOptions<ConstraintsTranslatorError>) -> Result<(), ConstraintsTranslatorError> {
-        print("1.0.0")
+        print("0.0.1 alpha")
         return .success(())
     }
 }
