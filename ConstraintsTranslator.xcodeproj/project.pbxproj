@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2B9503F81E6A6DFC00AEC107 /* GenerateCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9503F61E6A6DBD00AEC107 /* GenerateCommand.swift */; };
-		BE5A50A11E6A720D0019468C /* ConstraintsTranslatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A50A01E6A720D0019468C /* ConstraintsTranslatorTests.swift */; };
+		BE5A50A11E6A720D0019468C /* CenterViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A50A01E6A720D0019468C /* CenterViewTests.swift */; };
 		BE5A50A31E6A720D0019468C /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* Result.framework */; };
 		BE5A50AB1E6A72470019468C /* CenterView.json in Resources */ = {isa = PBXBuildFile; fileRef = BE5A50A91E6A72470019468C /* CenterView.json */; };
 		BE5A50AC1E6A72470019468C /* CenterView.xml in Resources */ = {isa = PBXBuildFile; fileRef = BE5A50AA1E6A72470019468C /* CenterView.xml */; };
@@ -81,7 +81,7 @@
 /* Begin PBXFileReference section */
 		2B9503F61E6A6DBD00AEC107 /* GenerateCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateCommand.swift; sourceTree = "<group>"; };
 		BE5A509E1E6A720D0019468C /* ConstraintsTranslatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConstraintsTranslatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE5A50A01E6A720D0019468C /* ConstraintsTranslatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintsTranslatorTests.swift; sourceTree = "<group>"; };
+		BE5A50A01E6A720D0019468C /* CenterViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterViewTests.swift; sourceTree = "<group>"; };
 		BE5A50A21E6A720D0019468C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE5A50A91E6A72470019468C /* CenterView.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CenterView.json; sourceTree = "<group>"; };
 		BE5A50AA1E6A72470019468C /* CenterView.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = CenterView.xml; sourceTree = "<group>"; };
@@ -162,7 +162,7 @@
 			children = (
 				BE5A50A91E6A72470019468C /* CenterView.json */,
 				BE5A50AA1E6A72470019468C /* CenterView.xml */,
-				BE5A50A01E6A720D0019468C /* ConstraintsTranslatorTests.swift */,
+				BE5A50A01E6A720D0019468C /* CenterViewTests.swift */,
 				BE5A50A21E6A720D0019468C /* Info.plist */,
 			);
 			path = ConstraintsTranslatorTests;
@@ -398,7 +398,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE5A50AD1E6A72650019468C /* VisualFormatLanguageTranslator.swift in Sources */,
-				BE5A50A11E6A720D0019468C /* ConstraintsTranslatorTests.swift in Sources */,
+				BE5A50A11E6A720D0019468C /* CenterViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -785,6 +785,7 @@
 				BE5A50A71E6A720D0019468C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 		OBJ_2 /* Build configuration list for PBXProject "ConstraintsTranslator" */ = {
 			isa = XCConfigurationList;
