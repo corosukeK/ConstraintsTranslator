@@ -32,6 +32,7 @@
 		BE5A50F41E6A9F600019468C /* OtherView.json in Resources */ = {isa = PBXBuildFile; fileRef = BE5A50F11E6A9F600019468C /* OtherView.json */; };
 		BE5A50F51E6A9F600019468C /* OtherViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A50F21E6A9F600019468C /* OtherViewTests.swift */; };
 		BE5A50F61E6A9F600019468C /* OtherView.xml in Resources */ = {isa = PBXBuildFile; fileRef = BE5A50F31E6A9F600019468C /* OtherView.xml */; };
+		BE5A50F81E6AB8100019468C /* HorizontalLayout.dsl in Resources */ = {isa = PBXBuildFile; fileRef = BE5A50F71E6AB8100019468C /* HorizontalLayout.dsl */; };
 		OBJ_45 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Result.swift */; };
 		OBJ_46 /* ResultProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* ResultProtocol.swift */; };
 		OBJ_53 /* Argument.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Argument.swift */; };
@@ -113,6 +114,7 @@
 		BE5A50F11E6A9F600019468C /* OtherView.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = OtherView.json; sourceTree = "<group>"; };
 		BE5A50F21E6A9F600019468C /* OtherViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherViewTests.swift; sourceTree = "<group>"; };
 		BE5A50F31E6A9F600019468C /* OtherView.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = OtherView.xml; sourceTree = "<group>"; };
+		BE5A50F71E6AB8100019468C /* HorizontalLayout.dsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HorizontalLayout.dsl; sourceTree = "<group>"; };
 		OBJ_10 /* ResultProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultProtocol.swift; sourceTree = "<group>"; };
 		OBJ_12 /* Argument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Argument.swift; sourceTree = "<group>"; };
 		OBJ_13 /* ArgumentParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentParser.swift; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 		BE5A50AF1E6A88190019468C /* HorizontalLayout */ = {
 			isa = PBXGroup;
 			children = (
+				BE5A50F71E6AB8100019468C /* HorizontalLayout.dsl */,
 				BE5A50B01E6A88690019468C /* HorizontalLayout.json */,
 				BE5A50B21E6A88720019468C /* HorizontalLayout.xml */,
 				BE5A50B31E6A88720019468C /* HorizontalLayoutTests.swift */,
@@ -449,6 +452,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE5A50F41E6A9F600019468C /* OtherView.json in Resources */,
+				BE5A50F81E6AB8100019468C /* HorizontalLayout.dsl in Resources */,
 				BE5A50AB1E6A72470019468C /* CenterView.json in Resources */,
 				BE5A50AC1E6A72470019468C /* CenterView.xml in Resources */,
 				BE5A50F61E6A9F600019468C /* OtherView.xml in Resources */,

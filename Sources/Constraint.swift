@@ -45,14 +45,15 @@ struct Constraint {
     
     func readableDescription(target: View) -> String {
         let name = target.userLabel ?? target.id
+        let firstItem = self.firstItem ?? target.id
+        
         if let constant = constant, firstAttribute == "width" && secondAttribute == nil {
             return "\(name).width == \(constant)"
         }
         else if let constant = constant, firstAttribute == "height" && secondAttribute == nil {
             return "\(name).height == \(constant)"
         }
-        else if  let firstItem = firstItem,
-            let secondItem = secondItem,
+        else if let secondItem = secondItem,
             let secondAttribute = secondAttribute
         {
             return "\(firstItem).\(firstAttribute) == \(secondItem).\(secondAttribute)"
