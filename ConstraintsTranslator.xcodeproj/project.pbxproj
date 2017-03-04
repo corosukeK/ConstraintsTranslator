@@ -29,6 +29,9 @@
 		BE5A50EC1E6A9D1B0019468C /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B95040A1E6A9C3800AEC107 /* Constraint.swift */; };
 		BE5A50EE1E6A9DE10019468C /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A50ED1E6A9DE10019468C /* View.swift */; };
 		BE5A50EF1E6A9DEC0019468C /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A50ED1E6A9DE10019468C /* View.swift */; };
+		BE5A50F41E6A9F600019468C /* OtherView.json in Resources */ = {isa = PBXBuildFile; fileRef = BE5A50F11E6A9F600019468C /* OtherView.json */; };
+		BE5A50F51E6A9F600019468C /* OtherViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A50F21E6A9F600019468C /* OtherViewTests.swift */; };
+		BE5A50F61E6A9F600019468C /* OtherView.xml in Resources */ = {isa = PBXBuildFile; fileRef = BE5A50F31E6A9F600019468C /* OtherView.xml */; };
 		OBJ_45 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Result.swift */; };
 		OBJ_46 /* ResultProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* ResultProtocol.swift */; };
 		OBJ_53 /* Argument.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Argument.swift */; };
@@ -107,6 +110,9 @@
 		BE5A50B21E6A88720019468C /* HorizontalLayout.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = HorizontalLayout.xml; sourceTree = "<group>"; };
 		BE5A50B31E6A88720019468C /* HorizontalLayoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalLayoutTests.swift; sourceTree = "<group>"; };
 		BE5A50ED1E6A9DE10019468C /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		BE5A50F11E6A9F600019468C /* OtherView.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = OtherView.json; sourceTree = "<group>"; };
+		BE5A50F21E6A9F600019468C /* OtherViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherViewTests.swift; sourceTree = "<group>"; };
+		BE5A50F31E6A9F600019468C /* OtherView.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = OtherView.xml; sourceTree = "<group>"; };
 		OBJ_10 /* ResultProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultProtocol.swift; sourceTree = "<group>"; };
 		OBJ_12 /* Argument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Argument.swift; sourceTree = "<group>"; };
 		OBJ_13 /* ArgumentParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentParser.swift; sourceTree = "<group>"; };
@@ -184,6 +190,7 @@
 		BE5A509F1E6A720D0019468C /* ConstraintsTranslatorTests */ = {
 			isa = PBXGroup;
 			children = (
+				BE5A50F01E6A9EF10019468C /* OtherView */,
 				BE5A50AF1E6A88190019468C /* HorizontalLayout */,
 				BE5A50AE1E6A87D50019468C /* CenterView */,
 				BE5A50A21E6A720D0019468C /* Info.plist */,
@@ -209,6 +216,16 @@
 				BE5A50B31E6A88720019468C /* HorizontalLayoutTests.swift */,
 			);
 			name = HorizontalLayout;
+			sourceTree = "<group>";
+		};
+		BE5A50F01E6A9EF10019468C /* OtherView */ = {
+			isa = PBXGroup;
+			children = (
+				BE5A50F11E6A9F600019468C /* OtherView.json */,
+				BE5A50F31E6A9F600019468C /* OtherView.xml */,
+				BE5A50F21E6A9F600019468C /* OtherViewTests.swift */,
+			);
+			name = OtherView;
 			sourceTree = "<group>";
 		};
 		OBJ_11 /* Commandant */ = {
@@ -431,8 +448,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE5A50F41E6A9F600019468C /* OtherView.json in Resources */,
 				BE5A50AB1E6A72470019468C /* CenterView.json in Resources */,
 				BE5A50AC1E6A72470019468C /* CenterView.xml in Resources */,
+				BE5A50F61E6A9F600019468C /* OtherView.xml in Resources */,
 				BE5A50B11E6A88690019468C /* HorizontalLayout.json in Resources */,
 				BE5A50B41E6A88720019468C /* HorizontalLayout.xml in Resources */,
 			);
@@ -456,6 +475,7 @@
 				BE5A50EC1E6A9D1B0019468C /* Constraint.swift in Sources */,
 				BE5A50EF1E6A9DEC0019468C /* View.swift in Sources */,
 				BE5A50B51E6A88720019468C /* HorizontalLayoutTests.swift in Sources */,
+				BE5A50F51E6A9F600019468C /* OtherViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
