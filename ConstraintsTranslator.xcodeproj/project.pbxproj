@@ -10,6 +10,9 @@
 		2B589DC51E6A4094002D3A03 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B589DC41E6A4094002D3A03 /* main.swift */; };
 		2B589DCC1E6A4971002D3A03 /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B589DCB1E6A4971002D3A03 /* Translator.swift */; };
 		2BA76DE71E6A4C5700E0592F /* VisualFormatLanguageTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA76DE61E6A4C5700E0592F /* VisualFormatLanguageTranslator.swift */; };
+		2BA76DEA1E6A5AEB00E0592F /* Commandant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA76DE91E6A5AEB00E0592F /* Commandant.framework */; };
+		2BA76DEC1E6A5AF600E0592F /* Fuzi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA76DEB1E6A5AF600E0592F /* Fuzi.framework */; };
+		2BA76DEE1E6A5B0100E0592F /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA76DED1E6A5B0100E0592F /* Result.framework */; };
 		BE5A508E1E6A4D740019468C /* ConstrainsTranslatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A508D1E6A4D740019468C /* ConstrainsTranslatorTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +33,9 @@
 		2B589DC41E6A4094002D3A03 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		2B589DCB1E6A4971002D3A03 /* Translator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Translator.swift; sourceTree = "<group>"; };
 		2BA76DE61E6A4C5700E0592F /* VisualFormatLanguageTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualFormatLanguageTranslator.swift; sourceTree = "<group>"; };
+		2BA76DE91E6A5AEB00E0592F /* Commandant.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Commandant.framework; path = Carthage/Build/Mac/Commandant.framework; sourceTree = "<group>"; };
+		2BA76DEB1E6A5AF600E0592F /* Fuzi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fuzi.framework; path = Carthage/Build/Mac/Fuzi.framework; sourceTree = "<group>"; };
+		2BA76DED1E6A5B0100E0592F /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
 		BE5A508B1E6A4D740019468C /* ConstrainsTranslatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConstrainsTranslatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5A508D1E6A4D740019468C /* ConstrainsTranslatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstrainsTranslatorTests.swift; sourceTree = "<group>"; };
 		BE5A508F1E6A4D740019468C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,6 +47,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BA76DEE1E6A5B0100E0592F /* Result.framework in Frameworks */,
+				2BA76DEC1E6A5AF600E0592F /* Fuzi.framework in Frameworks */,
+				2BA76DEA1E6A5AEB00E0592F /* Commandant.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +69,7 @@
 				2B589DC31E6A4094002D3A03 /* ConstraintsTranslator */,
 				BE5A508C1E6A4D740019468C /* ConstrainsTranslatorTests */,
 				2B589DC21E6A4094002D3A03 /* Products */,
+				2BA76DE81E6A5AEA00E0592F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +90,16 @@
 				2BA76DE61E6A4C5700E0592F /* VisualFormatLanguageTranslator.swift */,
 			);
 			path = ConstraintsTranslator;
+			sourceTree = "<group>";
+		};
+		2BA76DE81E6A5AEA00E0592F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BA76DED1E6A5B0100E0592F /* Result.framework */,
+				2BA76DEB1E6A5AF600E0592F /* Fuzi.framework */,
+				2BA76DE91E6A5AEB00E0592F /* Commandant.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BE5A508C1E6A4D740019468C /* ConstrainsTranslatorTests */ = {
@@ -293,6 +313,10 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				DEVELOPMENT_TEAM = T6FH9XPETC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -303,6 +327,10 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				DEVELOPMENT_TEAM = T6FH9XPETC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
