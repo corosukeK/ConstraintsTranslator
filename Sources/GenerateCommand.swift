@@ -46,8 +46,13 @@ public struct GenerateCommand: CommandProtocol {
         guard let unwrappedview = view else {
             fatalError()
         }
-
-        print(DSLFormatter().format(unwrappedview))
+        
+        let fileString = DSLFormatter().format(unwrappedview)
+        
+        let data = fileString.data(using: .utf8)
+        let path = filePath?.replacingOccurrences(of: ".storyboard", with: ".converted")
+        let url = URL(fileURLWithPath: path!)
+        try! data?.write(to: url)
         
         return .success()
     }
