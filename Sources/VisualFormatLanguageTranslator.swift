@@ -24,7 +24,66 @@ protocol Formatter {
 
 class JsonFormatter: Formatter {
     func format(_ view: View) -> String {
-        return ""
+        return "{\n" + formatView(view: view, indent: 1) + "}\n"
+    }
+    func formatView(view: View, indent: Int) -> String {
+        return spacing(indent) + "\"view\": {\n" +
+            formatAttribute(view: view, indent: indent + 1) +
+            subviews(view: view, indent: indent + 1) +
+            constraints(view: view, indent: indent + 1) +
+            spacing(indent) + "}\n"
+    }
+    func subviews(view: View, indent: Int) -> String {
+        if view.subviews.isEmpty { return spacing(indent) + "\"subviews\": [],\n" }
+        
+        let views = view.subviews.map{ formatView(view: $0, indent: indent + 2)}.joined(separator: spacing(indent + 1) + "}, {\n")
+        return spacing(indent) + "\"subviews\": [\n" +
+            spacing(indent + 1) + "{\n" +
+            views +
+            spacing(indent + 1) + "}\n" +
+            spacing(indent) + "],\n"
+    }
+    func formatAttribute(view: View, indent: Int) -> String {
+        return spacing(indent) + "\"attribute\": {\n" + spacing(indent + 1) + "\"id\": \"" + view.id + "\"\n" + spacing(indent) + "},\n"
+    }
+    func constraints(view: View, indent: Int) -> String {
+        if view.constraints.isEmpty { return spacing(indent) + "\"constraints\": []\n" }
+        
+        let constraints = view.constraints.map{ contraint(constraint: $0, indent: indent + 2) }.joined(separator: spacing(indent + 1) + "}, {\n")
+        return spacing(indent) + "\"constraints\": [\n" +
+            spacing(indent + 1) + "{\n" +
+            constraints +
+            spacing(indent + 1) + "}\n" +
+            spacing(indent) + "]\n"
+    }
+    func contraint(constraint: Constraint, indent: Int) -> String {
+        var attribute: [String] = []
+        
+        if let firstItem = constraint.firstItem {
+            attribute.append(spacing(indent) + "\"firstItem\": \"" + firstItem)
+        }
+        
+        attribute.append(spacing(indent) + "\"firstAttribute\": \"" + constraint.firstAttribute)
+        
+        if let secondItem = constraint.secondItem {
+            attribute.append(spacing(indent) + "\"secondItem\": \"" + secondItem)
+        }
+        
+        if let secondAttribute = constraint.secondAttribute {
+            attribute.append(spacing(indent) + "\"secondAttribute\": \"" + secondAttribute)
+        }
+        
+        if let constant = constraint.constant {
+            attribute.append(spacing(indent) + "\"constant\": \"" + constant)
+        }
+        
+        attribute.append(spacing(indent) + "\"id\": \"" + constraint.id)
+        
+        return attribute.joined(separator: "\",\n") + "\"\n"
+    }
+
+    func spacing(_ count: Int) -> String {
+        return String(repeating: " ", count: 4 * count)
     }
 }
 
@@ -54,7 +113,6 @@ struct Constraint {
     
     init(element: AEXMLElement) {
         let attributes = element.attributes
-        print(attributes)
         self.firstItem = attributes["firstItem"]
         self.firstAttribute = attributes["firstAttribute"]!
         self.secondItem = attributes["secondItem"]
@@ -75,9 +133,6 @@ struct View {
 
         let subviewsElement = element["subviews"]["view"]
         if subviewsElement.error == nil {
-            for view in subviewsElement.all! {
-                print(view.name)
-            }
             self.subviews = subviewsElement.all!.map({ (element) -> View in
                 return View(element: element)
             })

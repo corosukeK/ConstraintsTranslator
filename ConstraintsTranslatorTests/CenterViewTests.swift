@@ -1,6 +1,6 @@
 ///
-//  ConstrainsTranslatorTests.swift
-//  ConstrainsTranslatorTests
+//  CenterViewTests.swift
+//  CenterViewTests
 //
 //  Created by akuraru on 2017/03/04.
 //  Copyright © 2017年 Keisuke Kimura. All rights reserved.
@@ -10,19 +10,14 @@ import Foundation
 import XCTest
 @testable import ConstraintsTranslator
 
-class ConstrainsTranslatorTests: XCTestCase {
+class CenterViewTests: XCTestCase {
+    var view: View!
     
     override func setUp() {
         super.setUp()
-    }
-    
-    override func tearDown() {
-        super.tearDown()
-    }
-    
-    func testTemporaryClassToJsonFormat() {
-        let view = View(id: "m2d-tO-WM7", subviews: [
-            View(id: "Nb9-oQ-WCJ", subviews: [], constrains: [
+        
+        self.view = View(id: "m2d-tO-WM7", subviews: [
+            View(id: "Nb9-oQ-WCJ", subviews: [], constraints: [
                 Constraint(
                     firstAttribute: "width",
                     constant: "100",
@@ -34,7 +29,7 @@ class ConstrainsTranslatorTests: XCTestCase {
                 )
                 
                 ])
-            ] , constrains:[
+            ] , constraints:[
                 Constraint(
                     firstItem: "Nb9-oQ-WCJ",
                     firstAttribute: "centerY",
@@ -49,8 +44,15 @@ class ConstrainsTranslatorTests: XCTestCase {
                     id: "nTa-fY-4GG"
                 )
             ])
-        
-        let pathStirng = Bundle.allBundles[0].path(forResource: "CenterView", ofType: "json")
+    }
+    
+    override func tearDown() {
+        super.tearDown()
+    }
+    
+    func testTemporaryClassToJsonFormat() {
+        let testBundle = Bundle.allBundles.filter{ $0.bundleURL.absoluteString.hasSuffix("xctest/") }.first!
+        let pathStirng = testBundle.path(forResource: "CenterView", ofType: "json")
         let url = URL(fileURLWithPath: pathStirng!)
         let content = try! String(contentsOf: url, encoding: .utf8)
         XCTAssertEqual(VisualFormatLanguageTranslator.format(view: view, formatter: JsonFormatter()), content)

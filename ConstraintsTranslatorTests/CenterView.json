@@ -4,34 +4,33 @@
             "id": "m2d-tO-WM7"
         },
         "subviews": [
-           {
-               "view": {
-                   "attribute": {
-                       "id": "Nb9-oQ-WCJ"
-                   },
-                   "constraints": [
-                       { 
-                         "firstAttribute": "width",
-                         "constant": "100",
-                         "id": "COE-ui-HIh"
-                     }
-                     {
-                       "firstAttribute": "height",
-                       "constant": "100",
-                       "id": "Uvy-fQ-vpj"
-                   }
-               ]
-               }
-           }
-       ],
+            {
+                "view": {
+                    "attribute": {
+                        "id": "Nb9-oQ-WCJ"
+                    },
+                    "subviews": [],
+                    "constraints": [
+                        {
+                            "firstAttribute": "width",
+                            "constant": "100",
+                            "id": "COE-ui-HIh"
+                        }, {
+                            "firstAttribute": "height",
+                            "constant": "100",
+                            "id": "Uvy-fQ-vpj"
+                        }
+                    ]
+                }
+            }
+        ],
         "constraints": [
             {
                 "firstItem": "Nb9-oQ-WCJ",
-                "firstAttribute": "centerY", 
+                "firstAttribute": "centerY",
                 "secondItem": "m2d-tO-WM7",
                 "secondAttribute": "centerY",
-                "id": "lsJ-1m-vgh",
-
+                "id": "lsJ-1m-vgh"
             }, {
                 "firstItem": "Nb9-oQ-WCJ",
                 "firstAttribute": "centerX",
