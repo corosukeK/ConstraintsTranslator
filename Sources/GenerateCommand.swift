@@ -40,7 +40,9 @@ public struct GenerateCommand: CommandProtocol {
 
         let string = try! String(contentsOfFile: options.filePath)
         
-        _ = try! StoryboardParser.parse(string: string)
+        guard let _ = try? StoryboardParser.parse(string: string) else {
+            return .failure(.parseError)
+        }
         
         return .success()
     }
