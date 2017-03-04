@@ -7,3 +7,16 @@
 //
 
 import Foundation
+import Commandant
+import Result
+
+public struct VersionCommand: CommandProtocol {
+
+    public let verb = "version"
+    public let function = "Display the current version of ConstraintsTranslator"
+    
+    public func run(_ options: NoOptions<ConstraintsTranslatorError>) -> Result<(), ConstraintsTranslatorError> {
+        print("1.0.0")
+        return .success(())
+    }
+}

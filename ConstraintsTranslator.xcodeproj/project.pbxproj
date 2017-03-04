@@ -15,7 +15,6 @@
 		2BA76DEE1E6A5B0100E0592F /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA76DED1E6A5B0100E0592F /* Result.framework */; };
 		2BA76DF01E6A5CAB00E0592F /* ConstraintsTranslatorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA76DEF1E6A5CAB00E0592F /* ConstraintsTranslatorError.swift */; };
 		2BA76DF21E6A5D0C00E0592F /* VersionCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA76DF11E6A5D0C00E0592F /* VersionCommand.swift */; };
-		2BA76DF41E6A5D1900E0592F /* HelpCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA76DF31E6A5D1900E0592F /* HelpCommand.swift */; };
 		BE5A508E1E6A4D740019468C /* ConstrainsTranslatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A508D1E6A4D740019468C /* ConstrainsTranslatorTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +40,6 @@
 		2BA76DED1E6A5B0100E0592F /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
 		2BA76DEF1E6A5CAB00E0592F /* ConstraintsTranslatorError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintsTranslatorError.swift; sourceTree = "<group>"; };
 		2BA76DF11E6A5D0C00E0592F /* VersionCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionCommand.swift; sourceTree = "<group>"; };
-		2BA76DF31E6A5D1900E0592F /* HelpCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpCommand.swift; sourceTree = "<group>"; };
 		BE5A508B1E6A4D740019468C /* ConstrainsTranslatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConstrainsTranslatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5A508D1E6A4D740019468C /* ConstrainsTranslatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstrainsTranslatorTests.swift; sourceTree = "<group>"; };
 		BE5A508F1E6A4D740019468C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,7 +92,6 @@
 				2B589DC41E6A4094002D3A03 /* main.swift */,
 				2BA76DEF1E6A5CAB00E0592F /* ConstraintsTranslatorError.swift */,
 				2BA76DF11E6A5D0C00E0592F /* VersionCommand.swift */,
-				2BA76DF31E6A5D1900E0592F /* HelpCommand.swift */,
 				2B589DCB1E6A4971002D3A03 /* Translator.swift */,
 				2BA76DE61E6A4C5700E0592F /* VisualFormatLanguageTranslator.swift */,
 			);
@@ -128,6 +125,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B589DC81E6A4094002D3A03 /* Build configuration list for PBXNativeTarget "ConstraintsTranslator" */;
 			buildPhases = (
+				2BA76DF51E6A5FC700E0592F /* ShellScript */,
 				2B589DBD1E6A4094002D3A03 /* Sources */,
 				2B589DBE1E6A4094002D3A03 /* Frameworks */,
 				2B589DBF1E6A4094002D3A03 /* CopyFiles */,
@@ -170,7 +168,7 @@
 				TargetAttributes = {
 					2B589DC01E6A4094002D3A03 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = T6FH9XPETC;
+						DevelopmentTeam = 2TYVLETJ37;
 						ProvisioningStyle = Automatic;
 					};
 					BE5A508A1E6A4D740019468C = {
@@ -207,12 +205,30 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2BA76DF51E6A5FC700E0592F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/Mac/Result.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/Commandant.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/Fuzi.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2B589DBD1E6A4094002D3A03 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BA76DF41E6A5D1900E0592F /* HelpCommand.swift in Sources */,
 				2BA76DF21E6A5D0C00E0592F /* VersionCommand.swift in Sources */,
 				2B589DC51E6A4094002D3A03 /* main.swift in Sources */,
 				2BA76DE71E6A4C5700E0592F /* VisualFormatLanguageTranslator.swift in Sources */,
@@ -324,7 +340,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				DEVELOPMENT_TEAM = T6FH9XPETC;
+				DEVELOPMENT_TEAM = 2TYVLETJ37;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
@@ -338,7 +354,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				DEVELOPMENT_TEAM = T6FH9XPETC;
+				DEVELOPMENT_TEAM = 2TYVLETJ37;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",

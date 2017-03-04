@@ -8,6 +8,6 @@
 
 import Foundation
 
-enum ConstraintsTranslatorError: Error {
+public enum ConstraintsTranslatorError: Error {
     
 }
