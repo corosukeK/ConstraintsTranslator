@@ -88,6 +88,10 @@ class JsonFormatter: Formatter {
 }
 
 func arrayEqual<T: Equatable>(lhs: [T], rhs: [T]) -> Bool {
+    if lhs.count != rhs.count {
+        return false
+    }
+    
     for t in zip(lhs, rhs) {
         let b = (t.0 != t.1)
         if b {

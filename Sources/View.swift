@@ -30,7 +30,7 @@ struct View {
         }
         
         let constraintsElement = element["constraints"]["constraint"]
-        if subviewsElement.error == nil {
+        if constraintsElement.error == nil {
             self.constraints = constraintsElement.all!.map({ (element) -> Constraint in
                 return Constraint(element: element)
             })
@@ -49,7 +49,7 @@ struct View {
 extension View: Equatable {
     public static func ==(lhs: View, rhs: View) -> Bool {
         return lhs.id == rhs.id &&
-            arrayEqual(lhs: lhs.subviews, rhs: lhs.subviews) &&
-            arrayEqual(lhs: lhs.constraints, rhs: lhs.constraints)
+            arrayEqual(lhs: lhs.subviews, rhs: rhs.subviews) &&
+            arrayEqual(lhs: lhs.constraints, rhs: rhs.constraints)
     }
 }
